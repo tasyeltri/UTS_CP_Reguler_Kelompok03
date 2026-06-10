@@ -1,0 +1,15 @@
+# 1. GET Orders (Mengecek data awal)
+curl -X GET http://127.0.0.1:8088/api/uts/orders
+
+# 2. POST Struktur Kelompok
+curl -X POST http://127.0.0.1:8088/api/uts/evidence \
+     -H "Content-Type: application/json" \
+     -d "{\"struktur_kelompok\":\"role_internal\",\"project_manager\":\"abda\",\"api_tester\":\"muflih\",\"wireshark_packet_capture\":[\"muflih\",\"abda\",\"afni\"],\"data_analyst\":\"abda\",\"github_administrator\":[\"tasyel\",\"afni\"]}"
+
+# 3. POST Nilai Kontribusi Anggota
+curl -X POST http://127.0.0.1:8088/api/uts/evidence \
+     -H "Content-Type: application/json" \
+     -d "{\"nama_data\":\"kontribusi\",\"project_manager\":10,\"api_tester\":10,\"wireshark_packet_capture\":10,\"data_analyst\":10,\"github_administrator\":10}"
+
+# 4. GET Webhook Inbox (Validasi akhir)
+curl -X GET http://127.0.0.1:8088/api/webhook/inbox

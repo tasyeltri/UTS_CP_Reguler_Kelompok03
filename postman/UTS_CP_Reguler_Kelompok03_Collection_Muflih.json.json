@@ -1,0 +1,116 @@
+{
+  "info": {
+    "_postman_id": "b009fa04-6d1e-4235-b49c-543df168f2f2",
+    "name": "uts_kelompok_3",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "55060584",
+    "_collection_link": "https://go.postman.co/collection/55060584-b009fa04-6d1e-4235-b49c-543df168f2f2?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "post method ke 1",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"struktur_kelompok\": \"role_internal\",\n  \"project_manager\": \"abda\",\n  \"api_tester\": \"muflih\",\n  \"wireshark_packet_capture\": [\n    \"muflih\",\n    \"abda\",\n    \"afni\",\n],\n  \"data_analyst\": \"abda\",\n  \"github_administrator\": [\n    \"asyel\",\n    \"afni\"\n]\n}\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://mp19a4ae8603a459af5a.free.beeceptor.com/uts_compro/kelompok_3/method_post_1",
+          "protocol": "http",
+          "host": [
+            "mp19a4ae8603a459af5a",
+            "free",
+            "beeceptor",
+            "com"
+          ],
+          "path": [
+            "uts_compro",
+            "kelompok_3",
+            "method_post_1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "method get ke 1",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://mp19a4ae8603a459af5a.free.beeceptor.com/uts_compro/kelompok_3",
+          "protocol": "http",
+          "host": [
+            "mp19a4ae8603a459af5a",
+            "free",
+            "beeceptor",
+            "com"
+          ],
+          "path": [
+            "uts_compro",
+            "kelompok_3"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "method get ke 2",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://mp19a4ae8603a459af5a.free.beeceptor.com/method_get_2",
+          "protocol": "https",
+          "host": [
+            "mp19a4ae8603a459af5a",
+            "free",
+            "beeceptor",
+            "com"
+          ],
+          "path": [
+            "method_get_2"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "method POST ke 2",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nama_data\": \"kontribusi\",\n  \"project_manager\": 10,\n  \"api_tester\": 10,\n  \"wireshark_packet_capture\": 10,\n  \"data_analyst\": 10,\n  \"github_administrator\": \"10\"\n}\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://uts-trial.free.beeceptor.com/method_post_ke_2",
+          "protocol": "https",
+          "host": [
+            "uts-trial",
+            "free",
+            "beeceptor",
+            "com"
+          ],
+          "path": [
+            "method_post_ke_2"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

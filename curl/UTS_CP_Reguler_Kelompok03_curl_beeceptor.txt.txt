@@ -1,0 +1,7 @@
+# 1. GET Data Kelompok 3 awal
+curl -X GET https://mp19a4ae8603a459af5a.free.beeceptor.com/uts_compro/kelompok_3
+
+# 2. POST Payload Struktur ke Beeceptor
+curl -X POST https://mp19a4ae8603a459af5a.free.beeceptor.com/uts_compro/kelompok_3/method_post_1 \
+     -H "Content-Type: application/json" \
+     -d "{\"nama_kelompok\":\"kelompok_3\",\"ketua_kelompok\":\"abda\",\"anggota_1\":\"afni\",\"anggota_2\":\"tasyel\",\"anggota_3\":\"muflih\"}"
